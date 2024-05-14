@@ -1,0 +1,111 @@
+*
+{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+nav {
+    position: fixed; /* Fixed position */
+    top: 0; /* Fixed at the top */
+    width: 100%;
+    background-color: #faf8f8;
+    color: #0a0000;
+    padding: 20px; /* Increase padding for a bigger size */
+    text-align: right; 
+    font-family: cursive; /* Use cursive font */
+    font-size: large;
+    font-weight: bolder;
+    z-index: 1000;
+}
+nav a {
+    color:#222;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.3s; /* Add transition for smooth hover effect */
+    
+}
+nav a:hover {
+    text-decoration: underline; /* Remove default underline */
+    transform: scale(1.1); /* Zoom in effect */
+    text-shadow: 0 0 5px #011818, 0 0 10px #041b1b, 0 0 20px #011313; /* Neon effect */
+}
+.logo {
+    color: black; /* Set text color */
+    font-family: cursive; /* Use cursive font */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: bolder; /* Make the text bold */
+    margin-bottom: 3px; 
+    padding: 10px; /* Add padding to create space around the logo */
+    float: left; /* Align to the left */
+}
+
+.centered {
+    position: absolute;
+    top: calc(70% + 40px); /* Position text below nav bar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    width: 75%;
+}
+
+  .bg {
+    /* Set background image */
+    background-image: url('/images/bgnew.png');
+    
+    /* Adjust background size and position */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+    width: 100%; 
+     height: 100vh; 
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .nw {
+    font-family: cursive; /* Use cursive font */
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color:white; /* Set text color */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+
+}
+.arrow {
+    position: fixed;
+    top: 85px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.arrow a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: cursive;
+    transition: text-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.arrow a:hover {
+    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 20px #00aaff; /* Neon shadow effect on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

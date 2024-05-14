@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Styles for card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Styles for individual cards */
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for hidden cards container */
+.hidden-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Styles for show more button */
+#show-more-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#show-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Styles for individual cards */
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for hidden cards container */
+.hidden-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Styles for show more button */
+#show-more-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#show-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* Body background color */
+body {
+    background-color: rgb(28, 28, 51);
+}
+
+
+/* Styles for individual cards */
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: white; /* Card background color */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-icon a {
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .chat-icon i {
+    font-size: 35px; /* Adjust the size of the icon */
+    color: #007bff; /* Adjust the color of the icon */
+  }
+  nav {
+    position: fixed; /* Fixed position */
+    top: 0; /* Fixed at the top */
+    width: 100%;
+    background-color: #faf8f8;
+    color: #0a0000;
+    padding: 10px; /* Increase padding for a bigger size */
+    text-align: left; 
+    font-family: serif; /* Use cursive font */
+    font-size: large;
+    font-weight: bolder;
+    z-index: 1000;
+}
+nav a {
+    color:#222;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.3s; /* Add transition for smooth hover effect */
+    
+}
+nav a:hover {
+    text-decoration: underline; /* Remove default underline */
+    transform: scale(1.1); /* Zoom in effect */
+    text-shadow: 0 0 5px #011818, 0 0 10px #041b1b, 0 0 20px #011313; /* Neon effect */
+}
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+.logo {
+    color: black; /* Set text color */
+    font-family: serif; /* Use cursive font */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: bolder; /* Make the text bold */
+    margin-bottom: 3px; 
+    padding: 5px; /* Add padding to create space around the logo */
+    float: left; /* Align to the left */
+}

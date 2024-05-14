@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Network Learning Card</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  /* Card Styles */
+ 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .card {
+  width: 45%;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light grey background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(159, 216, 4, 0.1); /* Shadow effect */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for both transform and shadow */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(230, 252, 35, 0.2); /* Shadow effect on hover */
+}
+
+
+  .card.left {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .card.right {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  .review-card {
+    width: 45%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Icon Styles */
+  .icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .certificate {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .certificate-img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  .star {
+    color: yellow; /* Filled star color */
+    font-size: 20px; /* Adjust size as needed */
+}
+
+.rating {
+    margin-top: 10px; /* Adjust spacing */
+}
+.empty {
+    color: #ccc; /* Empty star color */
+}
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .chat-icon a {
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .chat-icon i {
+    font-size: 35px; /* Adjust the size of the icon */
+    color: #007bff; /* Adjust the color of the icon */
+  }
+  
+
+</style>
+</head>
+<body style="background-color: #110524;">
+
+<h1 style="color:white">Learning Objectives</h1>
+<div class="container">
+  <div class="card left">
+    <h2>What you'll learn</h2>
+    <ul>
+      <li>Describe network fundamentals and build simple LANs</li>
+      <li>Explain the OSI and TCP/IP models</li>
+      <li>Explain IP addressing and subnetting</li>
+      <li>Understand differences between routing protocols</li>
+      <li>Learn about network protocols including VLANs, VPNs, and DNS</li>
+      <li>Develop routing tables for routers to efficiently forward packets</li>
+      <li>Evaluate the strengths and weaknesses of different protocol types</li>
+    </ul>
+  </div>
+  
+  <div class="card right">
+    <h2>This course includes:</h2>
+    <ul>
+      <li>18.5 hours on-demand video</li>
+      <li>9 articles</li>
+      <li>172 downloadable resources</li>
+      <li>Access on mobile and TV</li>
+      <li>Certificate of completion</li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+    <div class="card right">
+        <h3>Sample Certificate</h3>
+        <img class="certificate-img" src="./images/projcert.png">
+    </div>
+    <div class="card right">
+        <h3>Sample Certificate</h3>
+        <img class="certificate-img" src="./images/projcert.png">
+    </div>
+    <div class="card left">
+        <h2>Reviews</h2>
+        <p>This was one of the best Networking course i have ever taken. It was very comprehensive, detailed, good amount of resources, updated 2019 and highly relevant. The best part is this course is being updated with relevant content periodically. So will have access to life for all updated content. Highly Recommended for new beginners and anyone interested in Computer Networks and Networking.</p>
+        <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+
+        </div>
+        <i class="icon fas fa-thumbs-up"></i>
+        
+    </div>
+    <div class="card left">
+        <h2>Reviews</h2>
+        <p>This was one of the best Networking course i have ever taken. It was very comprehensive, detailed, good amount of resources, updated 2019 and highly relevant. The best part is this course is being updated with relevant content periodically. So will have access to life for all updated content. Highly Recommended for new beginners and anyone interested in Computer Networks and Networking.</p>
+        <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star empty">&#9733;</span>
+        </div>
+        <i class="icon fas fa-thumbs-up"></i>
+        
+    </div>
+    <div class="chat-icon">
+      <a href="chatbot.html">
+        <i class="fas fa-comments"></i>
+      </a>
+  </div>
+    
+    
+  </div>
+</body>
+</html>

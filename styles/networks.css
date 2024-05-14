@@ -1,0 +1,40 @@
+
+/* networks.css */
+
+.ans {
+    position: absolute;
+    top: calc(5% + 40px); /* Position text below nav bar */
+    left: 38%;
+    transform: translateX(-50%);
+    font-family: cursive;
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    width: 70%;
+}
+
+.top
+{
+    color: black;
+    position: absolute;
+    top: calc(2% + 60px); 
+    left: 28%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.bg {
+    background-image: url('/images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1; /* Fill remaining space */
+}
+
+

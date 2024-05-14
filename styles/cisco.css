@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #04042e; /* Darkest blue background color */
+    color: #fff; /* White text color */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color:rgb(21, 21, 34);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #1f1f3a; /* Aesthetic sidebar color */
+    width: 200px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    font-size: x-large;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #fff; /* White text color for links */
+    text-decoration: underline;
+}
+
+.sidebar ul li a:hover {
+    color: #036;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content img {
+    width: 400px; /* Adjust the initial width as needed */
+    height: 390px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.content img:hover {
+    transform: scale(1.2); /* Scale up the image on hover */
+}
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #036;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #004080;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

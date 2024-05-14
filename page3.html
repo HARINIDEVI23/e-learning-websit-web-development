@@ -1,0 +1,208 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network Devices Comparison</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #f0f0f0;
+        text-align: left;
+        padding: 8px;
+        color: #dddddd;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    th {
+        background-color: #050008;
+        color: #f2f2f2;
+    }
+    body{
+        background-color: rgb(1, 1, 54);
+    }
+    h2{
+        color:white;
+    }
+    .container {
+    display: flex;
+}
+
+.left-image {
+    flex: 1; /* Makes the left image take up 50% of the container width */
+    margin-right: 10px; /* Optional margin between images */
+    margin-top: 30px;
+    width: 300px;
+    height: 500px; 
+
+}
+
+.right-image {
+    flex: 1; /* Makes the right image take up 50% of the container width */
+    margin-left: 10px;
+    width: 300px;
+    height: 500px; /* Optional margin between images */
+    margin-top: 30px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+        .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="color:white">Network Devices</h1>
+<table>
+    <tr>
+        <th>Device</th>
+        <th>Function</th>
+        <th>Key Features</th>
+    </tr>
+    <tr>
+        <td>Repeater</td>
+        <td>Extends network signal range</td>
+        <td>Regenerates weak signals to maintain signal strength. 2-port device.</td>
+    </tr>
+    <tr>
+        <td>Hub</td>
+        <td>Connects multiple devices; basic signal repeater</td>
+        <td>Does not filter data; sends data packets to all connected devices.</td>
+    </tr>
+    <tr>
+        <td>Bridge</td>
+        <td>Connects two LANs; filters data by MAC addresses</td>
+        <td>Operates at data link layer; transparent or source routing types available.</td>
+    </tr>
+    <tr>
+        <td>Switch</td>
+        <td>Connects multiple devices; selectively forwards data</td>
+        <td>Operates at data link layer; divides collision domain; various types including unmanaged, managed, layer 2, layer 3, etc.</td>
+    </tr>
+    <tr>
+        <td>Router</td>
+        <td>Routes data based on IP addresses</td>
+        <td>Connects LANs and WANs; dynamically updates routing table; divides broadcast domains.</td>
+    </tr>
+    <tr>
+        <td>Gateway</td>
+        <td>Connects networks with different protocols/models</td>
+        <td>Acts as a protocol converter; can operate at any network layer; more complex than switches or routers.</td>
+    </tr>
+    <tr>
+        <td>Brouter</td>
+        <td>Combines features of bridge and router</td>
+        <td>Can work at data link or network layer; capable of routing packets and filtering LAN traffic.</td>
+    </tr>
+    <tr>
+        <td>NIC</td>
+        <td>Network adapter for connecting computer to network</td>
+        <td>Installs in computer to establish LAN connection; operates at physical and data link layers.</td>
+    </tr>
+</table>
+<div class="container">
+    <img src="./images/nwdevices.jpg" alt="Image 1" class="left-image">
+    <img src="./images/nwdevices2.jpg" alt="Image 2" class="right-image">
+</div>
+<h1 style="color:white">Comparision of Networking Devices</h1>
+<table>
+    <tr>
+        <th>Criteria</th>
+        <th>Repeater</th>
+        <th>Hub</th>
+        <th>Bridge</th>
+        <th>Switch</th>
+        <th>Router</th>
+        <th>Gateway</th>
+        <th>Brouter</th>
+        <th>NIC</th>
+    </tr>
+    <tr>
+        <td>Layer of Operation</td>
+        <td>Physical</td>
+        <td>Physical</td>
+        <td>Data Link</td>
+        <td>Data Link</td>
+        <td>Network</td>
+        <td>Any</td>
+        <td>Data Link/Network</td>
+        <td>Physical/Data Link</td>
+    </tr>
+    <tr>
+        <td>Filtering</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Broadcast Domains</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>Multiple</td>
+        <td>Multiple</td>
+        <td>Multiple</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Intelligence</td>
+        <td>Minimal</td>
+        <td>Minimal</td>
+        <td>Basic</td>
+        <td>Variable</td>
+        <td>Dynamic</td>
+        <td>High</td>
+        <td>Variable</td>
+        <td>Minimal</td>
+    </tr>
+    <tr>
+        <td>Functions</td>
+        <td>Signal Boosting</td>
+        <td>Small Networks</td>
+        <td>LAN Interconnection</td>
+        <td>Device Connection; Network Segmentation</td>
+        <td>Network Interconnection</td>
+        <td>Protocol Conversion; Network Connectivity</td>
+        <td>Hybrid Bridge/Router Functionality</td>
+        <td>Connecting Computer to Network</td>
+    </tr>
+    <tr>
+        <td>Typical Usage</td>
+        <td>Signal Boosting</td>
+        <td>Small Networks</td>
+        <td>LAN Interconnection</td>
+        <td>Device Connection; Network Segmentation</td>
+        <td>Network Interconnection</td>
+        <td>Protocol Conversion; Network Connectivity</td>
+        <td>Hybrid Bridge/Router Functionality</td>
+        <td>Connecting Computer to Network</td>
+    </tr>
+</table>
+
+</body>
+</html>
+<a href="sample.html" class="btn">Back</a>
+<div class="image1">
+    <a href="videos.html" class="btn">Click here for videos</a>
+</div>
+
+</body>
+</html>

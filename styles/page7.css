@@ -1,0 +1,117 @@
+.column{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(7, 2, 39, 0.904);
+  }
+  .left-column {
+    margin-top: 35px;
+    width: 45%; /* Adjust the width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: #f3f2f8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(25, 26, 24, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(7, 2, 39, 0.3);
+  }
+  .content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  h2 {
+    color: white;
+    margin-top: 0;
+    margin-left:5px;
+  }
+  p {
+    color: #666666;
+    line-height: 1.6;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    padding-right: 20px;
+    color:white;
+  }
+  th {
+    background-color: #080708;
+  }
+  td:first-child {
+    width: 20%;
+  }
+  td:nth-child(2) {
+    width: 60%;
+  }
+  .heading
+  {
+    color: white;
+    margin-top: 10px;
+  }
+  
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.cards {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.cards h2 {
+  text-align: center;
+  color: #080708;
+}
+.cards:hover {
+  transform: translateY(-5px);
+}
+.tickmark {
+  color: green;
+  margin-right: 5px;
+}
+.image
+{
+  width:300px;
+  height: 200px;
+}

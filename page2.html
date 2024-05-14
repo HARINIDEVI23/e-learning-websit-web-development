@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Topology Types</title>
+    <link rel="stylesheet" href="./styles/page2,4.css">
+</head>
+<body>
+    <header>
+        <h1>Network Topology Types</h1>
+        <nav>
+            <ul>
+                <li><a href="#bus">Bus Topology</a></li>
+                <li><a href="#star">Star Topology</a></li>
+                <li><a href="#ring">Ring Topology</a></li>
+                <li><a href="#mesh">Mesh Topology</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="topology-section" id="bus">
+            <h2>Bus Topology</h2>
+            <p>Bus topology is a network type in which every computer and network device is connected to a single cable. The cable functions as a backbone for the network.</p>
+            <p>Advantages of Bus Topology:</p>
+            <ul>
+                <li>Easy to set up and extend.</li>
+                <li>Requires less cable length compared to other topologies.</li>
+                <li>Cost-effective for small networks.</li>
+            </ul>
+            <p>Disadvantages of Bus Topology:</p>
+            <ul>
+                <li>Single point of failure: If the main cable fails, the entire network goes down.</li>
+                <li>Performance decreases as more devices are added.</li>
+            </ul>
+            <div class="images">
+            <img src="./images/bus_topology.jpg" alt="Bus Topology">
+        </div>
+        </div>
+        <div class="topology-section" id="star">
+            <h2>Star Topology</h2>
+            <p>In a star topology, each computer and network device is connected to a central hub or switch. Data on a star network passes through the hub or switch before continuing to its destination.</p>
+            <p>Advantages of Star Topology:</p>
+            <ul>
+                <li>Centralized management and easy troubleshooting.</li>
+                <li>Failure of one device does not affect the rest of the network.</li>
+                <li>High performance even with many devices connected.</li>
+            </ul>
+            <p>Disadvantages of Star Topology:</p>
+            <ul>
+                <li>Dependent on the central hub or switch; failure of the hub can bring down the entire network.</li>
+                <li>Requires more cable compared to bus topology.</li>
+                <li>Costlier to implement and maintain.</li>
+            </ul>
+            <div class="images">
+            <img src="./images/star_topology.jpg" alt="Star Topology">
+            </div>
+        </div>
+        <div class="topology-section" id="ring">
+            <h2>Ring Topology</h2>
+            <p>Ring topology is a network configuration where each network device is connected to two other devices, forming a circular pathway for data to travel. Data travels in one direction only, from one device to the next and back again, until it reaches its destination.</p>
+            <p>Advantages of Ring Topology:</p>
+            <ul>
+                <li>Equal access to the network for all devices.</li>
+                <li>No collisions in data transmission.</li>
+                <li>Simple to install and configure.</li>
+            </ul>
+            <p>Disadvantages of Ring Topology:</p>
+            <ul>
+                <li>Failure of one device can disrupt the entire network.</li>
+                <li>Difficult to troubleshoot and expand.</li>
+                <li>Slower performance compared to star and mesh topologies.</li>
+            </ul>
+            <div class="images">
+            <img src="./images/ring_topology.jpg" alt="Ring Topology">
+            </div>
+        </div>
+        <div class="topology-section" id="mesh">
+            <h2>Mesh Topology</h2>
+            <p>Mesh topology is a network design in which each network node connects directly to every other node. Mesh networks are typically used in wide area networking where reliability and scalability are important.</p>
+            <p>Advantages of Mesh Topology:</p>
+            <ul>
+                <li>Highly reliable: Multiple paths for data transmission ensure network redundancy.</li>
+                <li>Scalable: Easy to expand by adding more nodes.</li>
+                <li>High performance: Can handle heavy traffic loads.</li>
+            </ul>
+            <p>Disadvantages of Mesh Topology:</p>
+            <ul>
+                <li>Costly to implement and maintain due to the large number of connections.</li>
+                <li>Complex to design and configure.</li>
+                <li>Requires more cable compared to other topologies.</li>
+            </ul>
+            <div class="images">
+            <img src="./images/mesh_topology.jpg" alt="Mesh Topology">
+            </div>
+        </div>
+        <a href="sample.html" class="btn">Back</a>
+        <div class="image1">
+            <a href="videos.html" class="btn">Click here for videos</a>
+        </div>
+    </main>
+    
+</body>
+</html>

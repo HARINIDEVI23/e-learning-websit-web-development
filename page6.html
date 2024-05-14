@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styles/page6.css">
+<title>Routing Protocols</title>
+</head>
+<body>
+    <div class="column">
+<div class="left-column">
+  <div class="card" onclick="showContent('rip')">Routing Information Protocol (RIP)</div>
+  <div class="content" id="ripContent">
+    <h2><u>Routing Information Protocol (RIP)</u></h2>
+    <p>RIP is one of the first routing protocols to be created. It's used in both LANs and WANs and operates on the Application layer of the OSI model.</p>
+    <p>There are multiple versions of RIP including RIPv1 and RIPv2. RIPv1 determines network paths based on the IP destination and hop count.</p>
+    <p>RIPv1 interacts with the network by broadcasting its IP table to all routers connected to the network. RIPv2 sends its routing table to a multicast address and offers authentication measures.</p>
+    <p>Main limitations of RIP include its maximum hop count of 15, lack of scalability, and limited route metric.</p>
+    <h3>Pros:</h3>
+    <ul>
+      <li>Historical Significance</li>
+      <li>Operational Simplicity</li>
+      <li>Application Layer Operation</li>
+      <li>Multicast Capability (RIPv2)</li>
+      <li>Enhanced Security (RIPv2)</li>
+    </ul>
+    <h3>Cons:</h3>
+    <ul>
+      <li>Maximum Hop Count</li>
+      <li>Lack of Scalability</li>
+      <li>Broadcaster (RIPv1)</li>
+      <li>Limited Route Metric</li>
+      <li>Slower Convergence</li>
+    </ul>
+  </div>
+  <div class="card" onclick="showContent('ospf')">Open Shortest Path First (OSPF)</div>
+  <div class="content" id="ospfContent">
+    <h2>Open Shortest Path First (OSPF)</h2>
+    <p>Open Shortest Path First or OSPF protocol is a link-state IGP that utilizes the Shortest Path First (SPF) algorithm to calculate the most efficient data transmission paths. OSPF routers maintain databases detailing information about the surrounding network topology, gathered from Link State Advertisements (LSAs) sent by other routers.</p>
+    <p>OSPF employs the Dijkstra algorithm to dynamically adjust to network topology changes, ensuring continuity in data transmission. It also offers protocol change authentication to maintain data security and scalability to large environments.</p>
+    <h3>Pros:</h3>
+    <ul>
+      <li>Efficient Routing</li>
+      <li>Detailed Network Insight</li>
+      <li>Dynamic Adaptability</li>
+      <li>Security Features</li>
+      <li>Highly Scalable</li>
+    </ul>
+    <h3>Cons:</h3>
+    <ul>
+      <li>Complex Configuration</li>
+      <li>Higher Overhead</li>
+      <li>Sensitive to Topology Changes</li>
+      <li>Resource Intensive</li>
+      <li>Potential for Large LSDB</li>
+    </ul>
+  </div>
+  <div class="card" onclick="showContent('bgp')">Border Gateway Protocol (BGP)</div>
+<div class="content" id="bgpContent">
+  <h2>Border Gateway Protocol (BGP)</h2>
+  <p>Border Gateway Protocol or BGP is the routing protocol of the internet, classified as a distance path vector protocol. It was designed to replace EGP with a decentralized approach to routing. BGP employs the BGP Best Path Selection Algorithm to choose the best routes for data packet transfers, typically preferring routes with the shortest path to the destination.</p>
+  <p>BGP allows administrators to customize routing decisions based on various factors like weight, local preference, AS_Path length, and more. It only sends updated router table data when changes occur, requiring manual configuration for topology changes. Additionally, BGP provides authentication measures to ensure secure data exchange between approved routers.</p>
+  <h3>Pros:</h3>
+  <ul>
+    <li>Internet Backbone</li>
+    <li>Decentralized Design</li>
+    <li>Customizable Path Selection</li>
+    <li>Efficient Updates</li>
+    <li>Granular Routing Decisions</li>
+    <li>Authentication</li>
+  </ul>
+  <h3>Cons:</h3>
+  <ul>
+    <li>Complex Configuration</li>
+    <li>Potential Instability</li>
+    <li>Scalability Concerns</li>
+    <li>Vulnerabilities</li>
+    <li>Learning Curve</li>
+    <li>Convergence Time</li>
+  </ul>
+</div>
+  <div class="card" onclick="showContent('igrp')">Interior Gateway Protocol (IGRP)</div>
+  <div class="content" id="igrpContent">
+    <h2>Interior Gateway Protocol (IGRP)</h2>
+    <p>Interior Gateway Protocol or IGRP is a distance vector routing protocol produced by Cisco. It was designed to address the limitations of RIP and function more effectively within larger connected networks.</p>
+    <p>IGRP uses metrics such as bandwidth, delay, reliability, and load to compare the viability of routes within the network. However, only bandwidth and delay are used under IGRP’s default settings.</p>
+    <p>IGRP is ideal for larger networks because it broadcasts updates every 90 seconds and has a maximum hop count of 255. This allows it to sustain larger networks than a protocol like RIP. IGRP is also resistant to routing loops because it updates itself automatically when route changes occur within the network.</p>
+    <h3>Pros:</h3>
+    <ul>
+      <li>Enhanced Scalability</li>
+      <li>Multiple Metrics</li>
+      <li>Frequent Updates</li>
+      <li>Loop Resistance</li>
+      <li>Cisco Legacy</li>
+    </ul>
+    <h3>Cons:</h3>
+    <ul>
+      <li>Proprietary Protocol</li>
+      <li>Limited Default Metrics</li>
+      <li>Superseded by EIGRP</li>
+      <li>Larger Overhead</li>
+      <li>Potential Complexity</li>
+    </ul>
+  </div>
+  
+  <div class="card" onclick="showContent('egp')">Exterior Gateway Protocol (EGP)</div>
+  <div class="content" id="egpContent">
+    <h2>Exterior Gateway Protocol (EGP)</h2>
+    <p>Exterior Gateway Protocol or EGP is a protocol that is used to exchange data between gateway hosts that neighbor each other within autonomous systems. In other words, EGP provides a forum for routers to share information across different domains. The most high profile example of an EGP is the internet itself. The routing table of the EGP protocol includes known routers, route costs, and network addresses of neighboring devices. EGP was widely-used by larger organizations but has since been replaced by BGP.</p>
+    <p>The reason why this protocol has fallen out of favor is that it doesn’t support multipath networking environments. The EGP protocol works by keeping a database of nearby networks and the routing paths it could take to reach them. This route information is sent on to connected routers. Once it arrives, the devices can update their routing tables and undertake more informed path selection throughout the network.</p>
+    <h3>Pros:</h3>
+    <ul>
+      <li>Data Exchange Between Autonomous Systems: Allows gateway hosts to share information across distinct network domains, effectively acting as a bridge.</li>
+      <li>Foundation of Early Internet: Served as a precursor and essential component to the modern internet’s formation.</li>
+      <li>Routing Database: Contains comprehensive information, including known routers, route costs, and the addresses of neighboring devices.</li>
+      <li>Path Information Sharing: Sends route data to neighboring routers, helping them update their tables and make better routing decisions.</li>
+    </ul>
+    <h3>Cons:</h3>
+    <ul>
+      <li>Lack of Multipath Support: EGP isn’t suitable for modern multipath networking environments, limiting its adaptability.</li>
+      <li>Obsolete: Has been largely phased out in favor of more advanced protocols, notably BGP.</li>
+      <li>Limited Scalability: As networks grew, EGP struggled with handling larger and more intricate systems.</li>
+      <li>Static Path Determination: While EGP keeps a database of nearby networks, its path determinations are more static, making it less flexible than newer protocols.</li>
+      <li>Potential for Redundancy: EGP’s method of sharing all route data with neighboring routers can lead to redundant data transmission and larger routing tables.</li>
+    </ul>
+  </div>
+
+
+  <!-- Repeat the same structure for other protocols -->
+</div>
+
+<div class="right-column">
+    <h2 class="heading">Routing Protocol Classification</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Protocols</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="category">Distance Vector</td>
+            <td class="description">Routing protocols that determine the best path to a destination based on distance or hop count.</td>
+            <td class="protocols">RIP, IGRP, EIGRP</td>
+          </tr>
+          <tr>
+            <td class="category">Link State</td>
+            <td class="description">Routing protocols that maintain a detailed view of the entire network topology.</td>
+            <td class="protocols">OSPF, IS-IS</td>
+          </tr>
+          <tr>
+            <td class="category">Interior Gateway Protocol (IGP)</td>
+            <td class="description">Routing protocols used within an autonomous system (AS).</td>
+            <td class="protocols">RIP, IGRP, EIGRP, OSPF, IS-IS</td>
+          </tr>
+          <tr>
+            <td class="category">Exterior Gateway Protocol (EGP)</td>
+            <td class="description">Routing protocols used between autonomous systems.</td>
+            <td class="protocols">BGP</td>
+          </tr>
+          <tr>
+            <td class="category">Classful</td>
+            <td class="description">Routing protocols that do not carry subnet mask information.</td>
+            <td class="protocols">RIP v1, IGRP</td>
+          </tr>
+          <tr>
+            <td class="category">Classless</td>
+            <td class="description">Routing protocols that carry subnet mask information.</td>
+            <td class="protocols">RIP v2, EIGRP, OSPF, BGP</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+  </div>
+</div>
+<h1 style="text-align: center;"><u>IPV4 & IPV6 ADDRESS</u></h1>
+<div class="container1">
+  <div class="cards">
+      <h2>IPv4</h2>
+      <ul>
+          <li><span class="tickmark">&#10004;</span> Address length: 32 bits</li>
+          <li><span class="tickmark">&#10004;</span> Notation: Decimal format separated by periods (e.g., 192.168.0.1)</li>
+          <li><span class="tickmark">&#10004;</span> Address space: Approximately 4.3 billion addresses</li>
+          <li><span class="tickmark">&#10004;</span> Address Configuration: Manual or DHCP</li>
+          <li><span class="tickmark">&#10004;</span> Header size: Fixed 20 bytes, variable options</li>
+          <li><span class="tickmark">&#10004;</span> Security: IPsec optional</li>
+          <li><span class="tickmark">&#10004;</span> Special addresses: Private addresses reserved for local networks</li>
+          <li><span class="tickmark">&#10004;</span> Migration challenges: Address exhaustion, NAT necessity</li>
+      </ul>
+  </div>
+  <div class="cards">
+    <img class="image" src="./images/ipv4.jpg">
+    <img class="image" src="./images/ipv42.jpg">
+</div>
+  <div class="cards">
+      <h2>IPv6</h2>
+      <ul>
+          <li><span class="tickmark">&#10004;</span> Address length: 128 bits</li>
+          <li><span class="tickmark">&#10004;</span> Notation: Hexadecimal format separated by colons (e.g., 2001:0db8:85a3:0000:0000:)</li>
+          <li><span class="tickmark">&#10004;</span> Address space: Huge, approximately 340 undecillion addresses</li>
+          <li><span class="tickmark">&#10004;</span> Address Configuration: Stateless autoconfiguration or DHCPv6</li>
+          <li><span class="tickmark">&#10004;</span> Header size: Fixed 40 bytes, simpler and more efficient</li>
+          <li><span class="tickmark">&#10004;</span> Security: Integrated security with IPSec mandatory</li>
+          <li><span class="tickmark">&#10004;</span> Special addresses: No need for private addresses due to vast address space</li>
+          <li><span class="tickmark">&#10004;</span> Migration challenges: Compatibility issues with legacy systems, transition mechanisms required</li>
+      </ul>
+  </div>
+  <div class="cards">
+    <img class="image" src="./images/ipv6.jpg">
+    <img class="image" src="./images/ipv62.jpg">
+
+</div>
+</div>
+<script>
+  
+  function showContent(protocol) {
+    var content = document.getElementById(protocol + 'Content');
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+    } else {
+      content.style.display = 'none';
+    }
+  }
+  
+
+
+</script>
+
+
+</body>
+</html>

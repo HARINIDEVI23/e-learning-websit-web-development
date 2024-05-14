@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(28, 28, 51); /* Body background color */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Text color */
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h2 {
+    color: #333;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-info strong {
+    font-weight: bold;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+  }
+  
+  .social-media ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .contact-form {
+    margin-top: 30px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* Input background color */
+    color: #333; /* Input text color */
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  nav {
+    position: fixed; /* Fixed position */
+    top: 0; /* Fixed at the top */
+    left: 0; /* Align to the left */
+    width: 100%;
+    background-color: #faf8f8;
+    color: #0a0000;
+    padding: 20px; /* Increase padding for a bigger size */
+    font-family: serif; /* Use cursive font */
+    font-size: large;
+    font-weight: bolder;
+    z-index: 1000;
+}
+
+nav a {
+    color:#222;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.3s; /* Add transition for smooth hover effect */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Remove default underline */
+    transform: scale(1.1); /* Zoom in effect */
+    text-shadow: 0 0 5px #011818, 0 0 10px #041b1b, 0 0 20px #011313; /* Neon effect */
+}

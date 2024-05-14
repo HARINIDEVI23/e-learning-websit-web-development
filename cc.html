@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPv4 Addressing</title>
+<style>
+  /* Grid Styles */
+  body {
+    background-color: #002147;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .container div {
+    padding: 20px;
+    background-color: #000e19;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .container div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+.content img {
+    width: 400px; /* Adjust the initial width as needed */
+    height: 390px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition */
+    padding-left: 15%;
+  
+}
+
+.content img:hover {
+    transform: scale(1.2); /* Scale up the image on hover */
+}
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.btn1{
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: violet;
+    
+    color:yellow;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.btn1:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<h1>IPv4 Addressing</h1>
+<div class="container">
+  <div>
+    <h2>Classful Addressing</h2>
+    <p>In classful addressing, IPv4 addresses are divided into five classes: A, B, C, D, and E.</p>
+    <ul>
+      <li>Class A: Supports large networks with few network segments. IP addresses start with a number from 1 to 126 in the first octet.</li>
+      <li>Class B: Suitable for medium-sized networks. IP addresses start with a number from 128 to 191 in the first octet.</li>
+      <li>Class C: Ideal for small networks. IP addresses start with a number from 192 to 223 in the first octet.</li>
+      <li>Class D: Reserved for multicast addresses. IP addresses start with a number from 224 to 239 in the first octet.</li>
+      <li>Class E: Reserved for experimental purposes. IP addresses start with a number from 240 to 255 in the first octet.</li>
+    </ul>
+    <div class="content">
+    <img src="./images/classa.png" alt="Cisco Packet Tracer">
+    <img src="./images/classb.jpg" alt="Cisco Packet Tracer">
+    <img src="./images/classc.jpg" alt="Cisco Packet Tracer">
+    <img src="./images/classd.png" alt="Cisco Packet Tracer">
+    <img src="./images/classe.png" alt="Cisco Packet Tracer">
+    </div>
+  </div>
+  
+  <div>
+    <h2>Classless Addressing</h2>
+    <p>In classless addressing, IP addresses are not restricted to specific classes.</p>
+    <ul>
+        <li>Allows for more flexible allocation of IP addresses.</li>
+        <li>Utilizes Variable Length Subnet Masking (VLSM) and Classless Inter-Domain Routing (CIDR).</li>
+        <li>Divides the IP address space into smaller subnets, resulting in efficient utilization of address space.</li>
+        <li>Reduces the size of routing tables and simplifies routing.</li>
+        <li>Helps overcome the limitations of classful addressing and IPv4 address exhaustion.</li>
+        <li>Enables efficient utilization of the IP address space by allowing for custom-sized subnets.</li>
+        <li>Facilitates easier allocation of IP addresses to networks of various sizes.</li>
+        <li>Reduces address wastage by allowing for finer control over subnet sizes.</li>
+        <li>Enables more efficient routing by reducing the size of routing tables and improving the scalability of the internet.</li>
+        <li>Supports hierarchical network design, allowing for better organization and management of network resources.</li>
+      </ul>
+    
+    <div class="content">
+        <h3>Variable Length Subnet Masking (VLSM)</h3>
+        <ul>
+            <li>Allows for more efficient use of IP addresses by assigning smaller subnets to areas with fewer hosts and larger subnets to areas with more hosts.</li>
+            <li>Reduces IP address wastage by tailoring the subnet mask to the specific number of hosts required in each subnet.</li>
+            <li>Enables the design of a hierarchical network structure that optimizes the use of available IP addresses.</li>
+        </ul>
+        
+        <img src="./images/vlsm.png" alt="Variable Length Subnet Masking (VLSM)">
+        
+        <h3>Classless Inter-Domain Routing (CIDR)</h3>
+        <ul>
+            <li>Eliminates the concept of address classes (Class A, B, and C) and allows for more flexible allocation of IP addresses.</li>
+            <li>CIDR notation represents an IP address followed by a slash and a number, indicating the number of bits used for the network portion of the address (e.g., 192.168.1.0/24).</li>
+            <li>Allows for the aggregation of IP addresses into a single routing table entry, reducing the size of routing tables and the overhead associated with routing protocols.</li>
+            <li>Plays a crucial role in delaying the exhaustion of IPv4 addresses by efficiently utilizing the available address space.</li>
+        </ul>
+        
+        <img src="./images/cidr.jpg" alt="Classless Inter-Domain Routing (CIDR)">
+        <h3>Benefits of Classless Addressing</h3>
+        <ul>
+            <li>Facilitates more efficient use of IP addresses by allowing for variable-length subnet masks.</li>
+            <li>Reduces the size of routing tables and improves the scalability of the internet.</li>
+            <li>Enables more flexible and hierarchical network designs.</li>
+            <li>Helps delay IPv4 address exhaustion by optimizing address allocation.</li>
+        </ul>
+        <h3>Comparison with Classful Addressing</h3>
+        <table>
+            <tr>
+                <th>Aspect</th>
+                <th>Classful Addressing</th>
+                <th>Classless Addressing</th>
+            </tr>
+            <tr>
+                <td>Subnetting</td>
+                <td>Fixed subnet sizes based on address classes (A, B, and C).</td>
+                <td>Variable Length Subnet Masking (VLSM) allows for custom subnet sizes.</td>
+            </tr>
+            <tr>
+                <td>Address Allocation</td>
+                <td>Addresses are allocated in predefined blocks based on address classes.</td>
+                <td>Addresses are allocated more efficiently, reducing address wastage.</td>
+            </tr>
+            <tr>
+                <td>Routing</td>
+                <td>Routing tables are larger due to fixed-size subnetting and class-based addressing.</td>
+                <td>Routing tables are smaller and more efficient due to variable-length subnet masking and CIDR.</td>
+            </tr>
+            <tr>
+                <td>Scalability</td>
+                <td>Less scalable due to inefficient use of IP address space.</td>
+                <td>More scalable due to efficient address allocation and reduced routing table size.</td>
+            </tr>
+            <tr>
+                <td>Flexibility</td>
+                <td>Less flexible in terms of address allocation and subnetting.</td>
+                <td>More flexible, allowing for custom subnet sizes and efficient address allocation.</td>
+            </tr>
+            <tr>
+                <td>Wastage</td>
+                <td>May lead to address wastage due to fixed-size subnetting.</td>
+                <td>Minimizes address wastage by allowing for variable-length subnet masks.</td>
+            </tr>
+            <tr>
+                <td>Address Space Utilization</td>
+                <td>Less efficient utilization of IP address space.</td>
+                <td>More efficient utilization of IP address space.</td>
+            </tr>
+        </table>
+    </div>
+  
+
+    </div>
+   
+</div>
+<a href="sample.html" class="btn">Back</a>
+<div class="image1">
+    <a href="videos.html" class="btn">Click here for videos</a>
+    <a href="quiz.html" class="btn1">Quiz</a>
+</div>
+
+</body>
+</html>

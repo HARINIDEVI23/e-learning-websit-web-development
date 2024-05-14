@@ -1,0 +1,14 @@
+
+
+
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+    justify-items: center;
+  }
+  
+  video {
+    width: 400px;
+  }
